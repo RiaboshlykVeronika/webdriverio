@@ -64,3 +64,77 @@ describe('Webdriverio_test', () => {
         console.log('Is focused after click: ' + isFocused);
     });
 });
+
+describe.skip('Webdriverio_test', () => {
+        it('LogIn with invalid data', async () => {
+            browser.url('https://github.com/');
+            await browser.pause(3000);
+            let loginButton = await $('a[href="/login"]');
+            await loginButton.click();
+            await browser.pause(3000);
+            let loginInput = await $('#login_field');
+            await loginInput.setValue('riaboshlyk.veronika@gmail.com');
+            await browser.pause(3000);
+            let passwordInput = await $('#password');
+            await passwordInput.setValue('1111');
+            await browser.pause(3000);
+            let signInButton = await $('input[type="submit"]');
+            await signInButton.click();
+            await browser.pause(3000);
+        });
+    });
+    
+    describe.skip('Webdriverio_test', () => {
+        it('Search with valid data', async () => {
+            browser.url('https://github.com/');
+            await browser.pause(3000);
+            let searchButton = await $('.header-search-input');
+            await searchButton.setValue('JavaScript');
+            await browser.pause(3000);
+            let dropdown = await $('.jump-to-dropdown-visible');
+            await dropdown.click();
+            await browser.pause(3000);
+        });
+    });
+    
+    describe.skip('Webdriverio_test', () => {
+        it('Add item to the Cart', async () => {
+            browser.url('https://github.com/');
+            await browser.pause(3000);
+            let shopButton = await $('a[href="https://shop.github.com"]');
+            await shopButton.click();
+            await browser.pause(3000);
+            let itemCard = await $('.featprod__img');
+            await itemCard.click();
+            await browser.pause(3000);
+            let addToCartButton = $('.butt-green');
+            await addToCartButton.click();
+        });
+    });
+    
+    describe.skip('Webdriverio_test', () => {
+        it('Search information on Github Community', async () => {
+            browser.url('https://github.com/');
+            await browser.pause(3000);
+            let forumButton = await $('//*[contains(text(),"Community Forum")]');
+            await forumButton.click();
+            await browser.pause(3000);
+            let topButton = $('//*[@href="/top"]');
+            await topButton.click();
+            await browser.pause(3000);
+        });
+    });
+    
+    describe.only('Webdriverio_test', () => {
+        it('Launch course from Learning Lab', async () => {
+            browser.url('https://github.com/');
+            await browser.pause(3000);
+            let learningLabButton = await $('//*[@class="Link--secondary"][@href="https://lab.github.com/"]');
+            await learningLabButton.click();
+            await browser.pause(3000);
+            let courseCard = $('//*[contains(text(),"Introduction to HTML")]');
+            await courseCard.click();
+            await browser.pause(3000);
+        });
+    });
+    

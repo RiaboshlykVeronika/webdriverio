@@ -1,0 +1,29 @@
+https://v5.webdriver.io/
+
+ Guide = a[href="/docs/gettingstarted.html"]; //*[contains(text(),'Guide')];
+ Blog = a[href="/docs/gettingstarted.html"; //*[contains(text(),'Blog')][@target];
+ Help = a[href="/help.html"]; //*[contains(text(),'help')][@target];
+ Edit = .edit-page-link; //a[@class='edit-page-link button'];
+ Contribute = li a[href="#contribute"]; //h2[contains(text(),'Contribute')];
+ V4 = [href="http://v4.webdriver.io"]; //*[contains(text(),'v4.webdriver')];
+ p = span > p:nth-child(4); //*[contains(text(),'Each command')];
+ Introduction = div:nth-child(1) > h3; //h3[text()="Introduction"];
+ API = a[ div:nth-child(1) > ul > li; //a[@class='navItem'][contains(text(),'API')]
+ Protocols = div:nth-child(2) > h3; //*[contains(text(),'Protocols')];
+ Webdriver protocol = a[href="/docs/api/webdriver.html"]; //a[contains(text(),'Webdriver Protocol')];
+ Appium = a[href="/docs/api/appium.html"]; //*[contains(text(),'Appium')];
+ JSON Wire Protocol = //a[@class='navItem'][contains(text(),'Appium')];
+ Chromium = a[href="/docs/api/chromium.html"]; //*[contains(text(),'Chromium')];
+ Sauce Labs = $a[href="/docs/api/saucelabs.html"]; //*[contains(text(),'Sauce Labs')];
+ Selenium Standalone = a[href="/docs/api/selenium.html"]; //*[contains(text(),'Selenium')];
+ Docs = //h5[contains(text(),'Docs')];
+ Getting Started = //*[contains(text(),'Started')];
+ API Reference = //a[contains(text(),'Reference') and @href];
+ Help = //div/a[contains(text(),'Help')];
+ Community = //*[contains(text(),'Community')];
+ Stack Overflow = //*[contains(text(),'Overflow')];
+ Support Chat = //*[contains(text(),'Chat')];
+ Twitter = //a[contains(text(),'Twitter')];
+ More = //h5[contains(text(),'More')];
+ Blog = //div/a[contains(text(),'Blog')];
+ Github = //div/a[contains(text(),'GitHub') and @href];
