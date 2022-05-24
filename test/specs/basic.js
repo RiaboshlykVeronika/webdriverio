@@ -138,3 +138,13 @@ describe.skip('Webdriverio_test', () => {
         });
     });
     
+const mainPage = require('../pageobjects/docs.page.js');
+
+describe('Webdriverio_test', () => {
+    it('main test', async () => {
+        browser.url('https://webdriver.io/');
+        await browser.pause(2000);
+        await mainPage.docsButton.click();
+        await browser.pause(2000);
+    });
+});
